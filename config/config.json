@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "admin",
+    "password": "Dangnhap@123",
+    "database": "nodejs_example",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  },
+  "test": {
+    "username": "admin",
+    "password": "Dangnhap@123",
+    "database": "nodejs_example",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  },
+  "production": {
+    "username": "admin",
+    "password": "Dangnhap@123",
+    "database": "nodejs_example",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  }
+}

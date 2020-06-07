@@ -1,5 +1,35 @@
 extends layout
 
 block content
-  h1= title
+  h1 Nodejs Example
   p Created by Neil Nguyen - Adamo
+  hr
+  
+  h2 List of students
+  table(border='1', style="width:80%")
+    tr
+      td ID
+      td Name
+      td Avatar
+    - each student in students
+      tr
+        td #{student.id}
+        td #{student.name}
+        td
+          - if (student.avatar)
+            img(src="/uploads/#{student.avatar}", alt="#{student.avatar}", height=300)
+
+  h2 Create new student
+  form(action="/", method="post", enctype='multipart/form-data')
+    label Name
+    br
+    input(type="text", name="name")
+    br
+    br
+    label Avatar
+    br
+    input(type="file", name="avatar")
+    br
+    br
+    button(type="submit") Submit
+  
